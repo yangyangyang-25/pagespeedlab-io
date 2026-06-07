@@ -1,0 +1,26 @@
+---
+import { absoluteUrl, pageTitle } from "../lib/seo";
+
+interface Props {
+  title?: string;
+  description: string;
+  pathname: string;
+  type?: "website" | "article";
+}
+
+const {
+  title,
+  description,
+  pathname,
+  type = "website"
+} = Astro.props;
+const canonical = absoluteUrl(pathname);
+---
+
+<title>{pageTitle(title)}</title>
+<meta name="description" content={description} />
+<link rel="canonical" href={canonical} />
+<meta property="og:title" content={pageTitle(title)} />
+<meta property="og:description" content={description} />
+<meta property="og:url" content={canonical} />
+<meta property="og:type" content={type} />

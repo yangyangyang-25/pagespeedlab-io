@@ -1,0 +1,18 @@
+---
+const { headings } = Astro.props as {
+  headings: { depth: number; slug: string; text: string }[];
+};
+---
+
+{headings.length > 0 && (
+  <aside class="card toc">
+    <strong>On this page</strong>
+    <ul style="padding-left:18px;">
+      {headings.map((heading) => (
+        <li style={`margin:8px 0 0 ${Math.max(0, heading.depth - 2) * 12}px;`}>
+          <a href={`#${heading.slug}`}>{heading.text}</a>
+        </li>
+      ))}
+    </ul>
+  </aside>
+)}

@@ -1,0 +1,19 @@
+---
+import { siteConfig } from "../config/site";
+import { sitePath } from "../lib/paths";
+---
+
+<header class="shell" style="padding: 22px 20px 12px;">
+  <div style="display:flex;justify-content:space-between;align-items:center;gap:16px;flex-wrap:wrap;">
+    <a href={sitePath("/")} style="font-size:1.2rem;font-weight:700;">
+      {siteConfig.title}
+    </a>
+    <nav style="display:flex;gap:16px;flex-wrap:wrap;">
+      {siteConfig.nav.map((item) => (
+        <a href={sitePath(item.href)}>
+          {item.label}
+        </a>
+      ))}
+    </nav>
+  </div>
+</header>

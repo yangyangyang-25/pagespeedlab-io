@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://yangyangyang-25.github.io/pagespeedlab-io/sitemap-index.xml

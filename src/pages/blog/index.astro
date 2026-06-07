@@ -1,0 +1,18 @@
+---
+import { getCollection } from "astro:content";
+import PostCard from "../../components/PostCard.astro";
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import { isPublished, sortPosts } from "../../lib/content";
+
+const posts = sortPosts((await getCollection("posts")).filter(isPublished));
+---
+
+<BaseLayout title="Blog" description="Astro SEO blog archive" pathname="/blog/">
+  <section class="hero">
+    <p class="meta">Archive</p>
+    <h1>All guides</h1>
+  </section>
+  <section class="post-list">
+    {posts.map((post) => <PostCard post={post} />)}
+  </section>
+</BaseLayout>

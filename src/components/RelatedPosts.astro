@@ -1,0 +1,19 @@
+---
+import type { CollectionEntry } from "astro:content";
+import { sitePath } from "../lib/paths";
+
+const { posts } = Astro.props as { posts: CollectionEntry<"posts">[] };
+---
+
+{posts.length > 0 && (
+  <section class="card">
+    <h2 style="margin-top:0;">Related posts</h2>
+    <ul style="margin:0;padding-left:18px;">
+      {posts.map((post) => (
+        <li>
+          <a href={sitePath(`/blog/${post.slug}/`)}>{post.data.title}</a>
+        </li>
+      ))}
+    </ul>
+  </section>
+)}

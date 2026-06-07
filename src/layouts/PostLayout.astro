@@ -1,0 +1,48 @@
+---
+import type { CollectionEntry } from "astro:content";
+import Breadcrumbs from "../components/Breadcrumbs.astro";
+import RelatedPosts from "../components/RelatedPosts.astro";
+import TableOfContents from "../components/TableOfContents.astro";
+import { slugify } from "../lib/content";
+import { sitePath } from "../lib/paths";
+import BaseLayout from "./BaseLayout.astro";
+
+interface Props {
+  post: CollectionEntry<"posts">;
+  headings: { depth: number; slug: string; text: string }[];
+  relatedPosts: CollectionEntry<"posts">[];
+}
+
+const { post, headings, relatedPosts } = Astro.props;
+const breadcrumbs = [
+  { href: sitePath("/"), label: "Home" },
+  { href: sitePath("/blog/"), label: "Blog" },
+  {
+    href: sitePath(`/category/${slugify(post.data.category)}/`),
+    label: post.data.category
+  }
+];
+---
+
+<BaseLayout
+  title={post.data.seoTitle || post.data.title}
+  description={post.data.seoDescription || post.data.description}
+  pathname={`/blog/${post.slug}/`}
+  type="article"
+>
+  <section class="hero">
+    <Breadcrumbs items={breadcrumbs} />
+    <p class="meta">{post.data.category} · {post.data.pubDate.toISOString().slice(0, 10)}</p>
+    <h1>{post.data.title}</h1>
+    <p>{post.data.description}</p>
+  </section>
+  <div class="content-wrap">
+    <article class="card">
+      <slot />
+    </article>
+    <TableOfContents headings={headings} />
+  </div>
+  <div style="margin-top:24px;">
+    <RelatedPosts posts={relatedPosts} />
+  </div>
+</BaseLayout>

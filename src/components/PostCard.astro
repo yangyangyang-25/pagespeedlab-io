@@ -1,0 +1,24 @@
+---
+import type { CollectionEntry } from "astro:content";
+import { sitePath } from "../lib/paths";
+
+type Post = CollectionEntry<"posts">;
+const { post } = Astro.props as { post: Post };
+---
+
+<article class="card">
+  <p class="meta">
+    {post.data.category} · {post.data.pubDate.toISOString().slice(0, 10)}
+  </p>
+  <h2 style="margin:8px 0 12px;">
+    <a href={sitePath(`/blog/${post.slug}/`)}>{post.data.title}</a>
+  </h2>
+  <p style="margin:0 0 12px;">{post.data.description}</p>
+  <div style="display:flex;flex-wrap:wrap;gap:8px;">
+    {post.data.tags.map((tag) => (
+      <span style="background:var(--accent-soft);padding:4px 10px;border-radius:999px;font-size:0.85rem;">
+        {tag}
+      </span>
+    ))}
+  </div>
+</article>
