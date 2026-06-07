@@ -3,13 +3,11 @@ import mdx from "@astrojs/mdx";
 import sitemap from "@astrojs/sitemap";
 import remarkGfm from "remark-gfm";
 
-const repo = "pagespeedlab-io";
-const owner = process.env.GITHUB_REPOSITORY_OWNER || "yangjun";
-const site = `https://${owner}.github.io`;
+const site = "https://pagespeedlab-io.pages.dev";
 
 export default defineConfig({
   site,
-  base: `/${repo}`,
+  base: "/",
   output: "static",
   integrations: [mdx(), sitemap()],
   markdown: {

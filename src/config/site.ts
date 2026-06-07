@@ -4,8 +4,8 @@ export const siteConfig = {
   description:
     "Practical web performance and Core Web Vitals guides for static content sites.",
   repo: "pagespeedlab-io",
-  basePath: "/pagespeedlab-io",
-  siteUrl: "https://yangyangyang-25.github.io",
+  basePath: "",
+  siteUrl: "https://pagespeedlab-io.pages.dev",
   nav: [
     { href: "/", label: "Home" },
     { href: "/blog/", label: "Blog" },
