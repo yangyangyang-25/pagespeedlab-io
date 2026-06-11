@@ -1,0 +1,1 @@
+find dist -type f | wc -l

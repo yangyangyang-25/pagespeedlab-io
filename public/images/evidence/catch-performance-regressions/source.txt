@@ -1,0 +1,1 @@
+grep -Roh '<img[^>]*' dist | head -10

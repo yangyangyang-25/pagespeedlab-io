@@ -4,6 +4,10 @@ export const siteConfig = {
   description:
     "Practical web performance and Core Web Vitals guides for static content sites.",
   repo: "pagespeedlab-io",
+  author: "Jun Yang",
+  repositoryUrl: "https://github.com/yangyangyang-25/pagespeedlab-io",
+  issuesUrl: "https://github.com/yangyangyang-25/pagespeedlab-io/issues",
+  lastPolicyUpdate: "2026-06-11",
   basePath: "",
   siteUrl: "https://pagespeedlab-io.pages.dev",
   nav: [

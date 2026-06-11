@@ -1,0 +1,76 @@
+> pagespeedlab-io@0.1.0 build
+> astro build
+
+22:10:35 [content] Syncing content
+22:10:35 [content] Synced content
+22:10:35 [types] Generated 454ms
+22:10:35 [build] output: "static"
+22:10:35 [build] mode: "static"
+22:10:35 [build] directory: <repo>/dist/
+22:10:35 [build] Collecting build info...
+22:10:35 [build] ✓ Completed in 499ms.
+22:10:35 [build] Building static entrypoints...
+22:10:36 [vite] ✓ built in 1.30s
+22:10:36 [build] ✓ Completed in 1.34s.
+
+ generating static routes
+22:10:36 ▶ src/pages/404.astro
+22:10:36   └─ /404.html (+16ms)
+22:10:36 ▶ src/pages/about.astro
+22:10:36   └─ /about/index.html (+5ms)
+22:10:36 ▶ src/pages/blog/[slug].astro
+22:10:36   ├─ /blog/catch-performance-regressions/index.html (+7ms)
+22:10:36   ├─ /blog/astro-performance-checklist/index.html (+4ms)
+22:10:36   ├─ /blog/core-web-vitals-audit/index.html (+3ms)
+22:10:36   ├─ /blog/field-data-performance/index.html (+4ms)
+22:10:36   ├─ /blog/font-loading-performance/index.html (+3ms)
+22:10:36   ├─ /blog/fix-cls-blog-layout/index.html (+2ms)
+22:10:36   ├─ /blog/image-compression-workflow/index.html (+13ms)
+22:10:36   ├─ /blog/improve-lcp-static-site/index.html (+8ms)
+22:10:36   ├─ /blog/inp-basics-content-sites/index.html (+5ms)
+22:10:36   ├─ /blog/javascript-budget-static-site/index.html (+8ms)
+22:10:36   ├─ /blog/lazy-loading-images-guide/index.html (+16ms)
+22:10:36   ├─ /blog/pagespeed-insights-workflow/index.html (+5ms)
+22:10:36   ├─ /blog/performance-friendly-templates/index.html (+7ms)
+22:10:36   ├─ /blog/performance-changelog/index.html (+6ms)
+22:10:36   ├─ /blog/responsive-images-static-blog/index.html (+4ms)
+22:10:36   ├─ /blog/reduce-third-party-scripts/index.html (+3ms)
+22:10:36   ├─ /blog/static-site-build-speed/index.html (+3ms)
+22:10:36   ├─ /blog/webp-avif-static-sites/index.html (+3ms)
+22:10:36   ├─ /blog/static-site-performance-setup/index.html (+3ms)
+22:10:36   ├─ /blog/static-site-waterfall-analysis/index.html (+3ms)
+22:10:36   ├─ /blog/web-vitals-monitoring-small-site/index.html (+3ms)
+22:10:36   └─ /blog/website-speed-audit-checklist/index.html (+3ms)
+22:10:36 ▶ src/pages/blog/index.astro
+22:10:36   └─ /blog/index.html (+4ms)
+22:10:36 ▶ src/pages/category/[category].astro
+22:10:36   ├─ /category/monitoring/index.html (+4ms)
+22:10:36   ├─ /category/static-publishing/index.html (+3ms)
+22:10:36   ├─ /category/core-web-vitals/index.html (+7ms)
+22:10:37   ├─ /category/web-performance/index.html (+4ms)
+22:10:37   └─ /category/image-optimization/index.html (+3ms)
+22:10:37 ▶ src/pages/contact.astro
+22:10:37   └─ /contact/index.html (+1ms)
+22:10:37 ▶ src/pages/disclaimer.astro
+22:10:37   └─ /disclaimer/index.html (+2ms)
+22:10:37 ▶ src/pages/index.astro
+22:10:37   └─ /index.html (+4ms)
+22:10:37 ▶ src/pages/privacy.astro
+22:10:37   └─ /privacy/index.html (+2ms)
+22:10:37 λ src/pages/rss.xml.ts
+22:10:37   └─ /rss.xml (+8ms)
+22:10:37 ▶ src/pages/tag/[tag].astro
+22:10:37   ├─ /tag/monitoring/index.html (+4ms)
+22:10:37   ├─ /tag/pagespeedlab-io/index.html (+5ms)
+22:10:37   ├─ /tag/implementation/index.html (+3ms)
+22:10:37   ├─ /tag/static-publishing/index.html (+4ms)
+22:10:37   ├─ /tag/core-web-vitals/index.html (+4ms)
+22:10:37   ├─ /tag/web-performance/index.html (+3ms)
+22:10:37   └─ /tag/image-optimization/index.html (+4ms)
+22:10:37 ▶ src/pages/terms.astro
+22:10:37   └─ /terms/index.html (+2ms)
+22:10:37 ✓ Completed in 398ms.
+
+22:10:37 [@astrojs/sitemap] `sitemap-index.xml` created at `dist`
+22:10:37 [build] 42 page(s) built in 2.32s
+22:10:37 [build] Complete!

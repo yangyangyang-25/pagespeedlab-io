@@ -1,0 +1,20 @@
+12K	dist/blog/website-speed-audit-checklist/index.html
+ 12K	dist/category/core-web-vitals
+ 12K	dist/category/core-web-vitals/index.html
+ 12K	dist/category/web-performance
+ 12K	dist/category/web-performance/index.html
+ 12K	dist/index.html
+ 12K	dist/rss.xml
+ 12K	dist/tag/core-web-vitals
+ 12K	dist/tag/core-web-vitals/index.html
+ 12K	dist/tag/web-performance
+ 12K	dist/tag/web-performance/index.html
+ 24K	dist/blog/index.html
+ 24K	dist/tag/implementation
+ 24K	dist/tag/implementation/index.html
+ 24K	dist/tag/pagespeedlab-io
+ 24K	dist/tag/pagespeedlab-io/index.html
+ 48K	dist/category
+ 96K	dist/tag
+288K	dist/blog
+524K	dist

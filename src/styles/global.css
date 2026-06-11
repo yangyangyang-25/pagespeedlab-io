@@ -43,6 +43,21 @@ pre {
   font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, monospace;
 }
 
+table {
+  width: 100%;
+  border-collapse: collapse;
+  display: block;
+  overflow-x: auto;
+}
+
+th,
+td {
+  padding: 10px 12px;
+  border: 1px solid var(--line);
+  text-align: left;
+  vertical-align: top;
+}
+
 pre {
   overflow-x: auto;
   padding: 16px;
@@ -108,6 +123,112 @@ pre {
 .toc {
   position: sticky;
   top: 24px;
+}
+
+.policy-hero {
+  padding-bottom: 20px;
+}
+
+.policy-card {
+  max-width: 780px;
+  margin-bottom: 48px;
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: 16px;
+  padding: clamp(22px, 4vw, 40px);
+}
+
+.prose {
+  font-size: 1.05rem;
+  line-height: 1.72;
+}
+
+.prose h2 {
+  margin-top: 2rem;
+  line-height: 1.2;
+}
+
+.prose h2:first-child {
+  margin-top: 0;
+}
+
+.notice {
+  margin: 24px 0;
+  padding: 16px 18px;
+  border-left: 4px solid var(--accent);
+  background: var(--accent-soft);
+  border-radius: 0 10px 10px 0;
+}
+
+.button-link {
+  display: inline-block;
+  padding: 10px 16px;
+  color: #fff;
+  background: var(--accent);
+  border-radius: 999px;
+}
+
+.button-link:hover {
+  text-decoration: none;
+  filter: brightness(0.92);
+}
+
+.site-footer {
+  padding-top: 32px;
+  padding-bottom: 56px;
+}
+
+.footer-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 24px;
+}
+
+.footer-title,
+.footer-copy {
+  margin: 0;
+}
+
+.footer-title {
+  margin-bottom: 8px;
+}
+
+.footer-links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  gap: 10px 18px;
+}
+
+.evidence-figure {
+  margin: 28px 0;
+  padding: 12px;
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  background: #f1eee4;
+}
+
+.evidence-figure img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+.evidence-figure figcaption {
+  padding: 10px 4px 2px;
+  color: var(--muted);
+  font-size: 0.92rem;
+  line-height: 1.45;
+}
+
+@media (max-width: 680px) {
+  .footer-card {
+    flex-direction: column;
+  }
+
+  .footer-links {
+    justify-content: flex-start;
+  }
 }
 
 @media (min-width: 980px) {

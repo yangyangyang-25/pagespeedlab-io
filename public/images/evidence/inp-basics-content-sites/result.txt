@@ -1,0 +1,20 @@
+28K	dist/images/evidence/webp-avif-static-sites
+ 28K	dist/images/evidence/website-speed-audit-checklist
+ 48K	dist/category
+ 96K	dist/tag
+128K	dist/images/evidence/core-web-vitals-audit/evidence.png
+136K	dist/images/evidence/core-web-vitals-audit
+256K	dist/images/evidence/astro-performance-checklist/evidence.png
+256K	dist/images/evidence/catch-performance-regressions/evidence.png
+256K	dist/images/evidence/fix-cls-blog-layout/evidence.png
+256K	dist/images/evidence/font-loading-performance/evidence.png
+256K	dist/images/evidence/image-compression-workflow/evidence.png
+264K	dist/images/evidence/astro-performance-checklist
+264K	dist/images/evidence/catch-performance-regressions
+264K	dist/images/evidence/fix-cls-blog-layout
+264K	dist/images/evidence/font-loading-performance
+264K	dist/images/evidence/image-compression-workflow
+288K	dist/blog
+1.9M	dist/images
+1.9M	dist/images/evidence
+2.4M	dist

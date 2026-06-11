@@ -3,12 +3,15 @@ import BaseLayout from "../layouts/BaseLayout.astro";
 ---
 
 <BaseLayout title="About" description="About PageSpeedLab.io" pathname="/about/">
-  <section class="hero">
-    <p class="meta">About</p>
-    <h1>PageSpeedLab.io</h1>
-    <p>
-      This site publishes practical, implementation-first guides for building
-      fast static content sites with Astro.
-    </p>
-  </section>
+  <section class="hero policy-hero"><p class="meta">About</p><h1>About PageSpeedLab.io</h1></section>
+  <article class="policy-card prose">
+<h2>Purpose and audience</h2>
+<p>PageSpeedLab.io publishes measured web performance guidance for static content sites. It is written for site owners and developers who need reproducible implementation details.</p>
+<h2>Editorial principles</h2>
+<p>Every retained guide defines an outcome, includes a real repository artifact, explains verification, and states limitations. Overlapping intents are merged rather than expanded into shallow pages.</p>
+<h2>Author and testing policy</h2>
+<p>PageSpeedLab.io is edited by Jun Yang. Tutorials are tested where practical and are updated when material platform behavior changes.</p>
+<h2>Corrections and updates</h2>
+<p>Submit reproducible corrections through the public GitHub Issues page.</p>
+  </article>
 </BaseLayout>
